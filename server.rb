@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'mechanize'
-require 'pony'
 require 'pry'
 require 'httparty'
 require 'nokogiri'
