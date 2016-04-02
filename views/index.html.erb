@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ESL </title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="scripts/main.js"></script>
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+  </head>
+  <body>
+    <div id="formContainer">
+      <form action="/search" method="post">
+        <input id="word" type="text" name="word" placeholder="Word or Phrase">
+        <input id="search" type="submit" value="Search" onclick="placeText()">
+      </form>
+    </div>
+    <div id="lyricsContainer">
+      <h1 id="songTitle"><%= $sng %></h1>
+      <h2 id="songArtist"><%= $art %></h2>
+      <p><%= $lyrics %></p>
+      <a href="" class="extraSongs"><%= $songNames[1] %></a>
+      <a href="" class="extraSongs"><%= $songNames[2] %></a>
+      <a href="" class="extraSongs"><%= $songNames[3] %></a>
+      <a href="" class="extraSongs"><%= $songNames[4] %></a>
+    </div>
+    <iframe width="560" height="315" src="<%= $video %>" frameborder="0" allowfullscreen></iframe>
+  </body>
+</html>

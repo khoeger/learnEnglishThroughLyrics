@@ -1,0 +1,93 @@
+body {
+  background-color: #f1f1f1;
+  margin: 0%;
+}
+
+
+#lyricsContainer {
+  width: 45%;
+  margin-left: 5%;
+  background-color: #fff;
+  margin-top: 5%;
+  border: .2vw solid #e1e1e1;
+}
+
+#lyrics {
+  color: #3f3f3f;
+  font-size: 1.5vw;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: inline-block;
+}
+
+#formContainer {
+  margin-left: 5%;
+  width: 30%;
+  position: relative;
+  margin-top: 3%;
+  padding-right: 10%;
+  border-right: .2vw solid #e1e1e1;
+  display: inline-block;
+}
+
+#title {
+  display: block;
+  width: 99%;
+  margin-bottom: 2%;
+  line-height: 2vw;
+  font-size: 1.2vw;
+}
+
+#artist {
+  display: block;
+  width: 99%;
+  line-height: 2vw;
+  font-size: 1.2vw;
+}
+
+#search {
+  margin-top: 2%;
+  float: right;
+  font-size: 1.2vw;
+}
+
+#songTitle {
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+#songArtist {
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 0%;
+}
+
+.button {
+  width: 6%;
+  display: none;
+}
+
+#player {
+  float: right;
+  margin-top: 3%;
+  margin-right: 5%;
+  width: 40%;
+  position: relative;
+  background-color: #fff;
+  border: .2vw solid #e1e1e1;
+  padding: 1%;
+}
+
+#play {
+  display: inline-block;
+}
+
+#robostarSings {
+  display: inline-block;
+  font-size: 1.2vw;
+  margin-top: 1.5%;
+  margin-left: 2%;
+  position: absolute;
+}
