@@ -1,5 +1,7 @@
 require 'sinatra'
+require 'sinatra/reloader' if development?
 require 'mechanize'
+require 'pony'
 require 'pry'
 require 'httparty'
 require 'nokogiri'
@@ -16,7 +18,7 @@ get '/search' do
   sng = params[:title].to_s
   artist = art.gsub(/\s/,'-')
   title = sng.gsub(/\s/,'-')
-  erb :"index.html"
+  erb :"search.html"
 end
 
 post "/search" do
