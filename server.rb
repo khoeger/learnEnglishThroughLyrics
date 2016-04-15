@@ -21,6 +21,7 @@ get '/search' do
   @lyrics = $lyrics
   @word = $wrd
   @songNames = $songNames
+  @songUrls = $songUrls
   erb :search
 end
 
@@ -57,4 +58,23 @@ post "/search" do
   end
 
   redirect to '/search'
+end
+
+get '/lyric/:id' do
+  @songUrls = $songUrls
+  @songNames = $songNames
+  @word = $wrd
+
+  firstLink = HTTParty.get('http://www.lyrics.net/lyric/' + params[:id])
+  parse_page = Nokogiri::HTML(firstLink)
+  parse_page.css('#lyric-body-text').each do |a|
+    @lyrics = a.text
+    @lyrics = @lyrics.to_s
+    @final_lyrics = @lyrics.gsub! '\n', '</br>'
+  end
+
+  parse_page.css('embed[src]').map do |a|
+    $video = a['src']
+  end
+  erb :search
 end

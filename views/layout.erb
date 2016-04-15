@@ -2,8 +2,9 @@
 <html>
   <head>
     <title><%= @title %></title>
-    <link rel="stylesheet" href="layout.css" type="text/css">
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../layout.css" type="text/css">
+    <link href="../index.css" rel="stylesheet" type="text/css">
+    <script src="../scripts/main.js"></script>
   </head>
   <body>
     <div id="navigation">
@@ -12,4 +13,13 @@
     </div>
     <%= yield %>
   </body>
+  <script>
+    setTimeout(function(){
+      var word = document.getElementById('Aword').innerHTML;
+      var lyrics = document.getElementById('lyrics').innerHTML;
+      var regex = new RegExp(word, 'g');
+      var newLyrics = lyrics.replace(regex, "<span class=\"highlight\">" + word + "</span>");
+      document.getElementById('lyrics').innerHTML = newLyrics;
+    }, 500);
+  </script>
 </html>

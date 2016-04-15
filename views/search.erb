@@ -3,11 +3,11 @@
     <input id="word" type="text" name="word" placeholder="Word or Phrase">
     <input id="search" type="submit" value="S" onclick="placeText()">
     <div id="extraSongsContainer">
-      <h1 id="other">Other Songs Containing "<%= @word %>":</h1>
-      <a href="" class="extraSongs"><%= @songNames[1] %></a>
-      <a href="" class="extraSongs"><%= @songNames[2] %></a>
-      <a href="" class="extraSongs"><%= @songNames[3] %></a>
-      <a href="" class="extraSongs"><%= @songNames[4] %></a>
+      <h1 id="other">Other Songs Containing "<span id="Aword"><%= @word %></span>":</h1>
+      <a href="<%= @songUrls[1]%>" class="extraSongs"><%= @songNames[1] %></a>
+      <a href="<%= @songUrls[2]%>" class="extraSongs"><%= @songNames[2] %></a>
+      <a href="<%= @songUrls[3]%>" class="extraSongs"><%= @songNames[3] %></a>
+      <a href="<%= @songUrls[4]%>" class="extraSongs"><%= @songNames[4] %></a>
     </div>
   </form>
   <p id="rightSide">
@@ -17,5 +17,5 @@
 <div id="lyricsContainer">
   <h1 id="songTitle"><%= $sng %></h1>
   <h2 id="songArtist"><%= $art %></h2>
-  <p id="lyrics"><%= @lyrics %></p>
+  <p id="lyrics"  onload="highlights()"><%= @lyrics %></p>
 </div>

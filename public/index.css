@@ -158,30 +158,66 @@ form {
 
 iframe {
   height: 20vw;
+  -webkit-height: 20vw;
+  -moz-height: 20vw;
+  -ms-height: 10em;
+  -o-height: 20vw;
 }
 
 #lyricsContainer {
   width: 40%;
+  -webkit-width: 40%;
+  -moz-width: 40%;
+  -ms-width: 40%;
+  -o-width: 40%;
   margin-left: 5%;
+  -webkit-margin-left: 5%;
+  -moz-margin-left: 5%;
+  -ms-margin-left: 5%;
+  -o-margin-left: 5%;
   background-color: #fff;
   color: #191919;
   margin-bottom: 5%;
+  -webkit-margin-bottom: 5%;
+  -moz-margin-bottom: 5%;
+  -ms-margin-bottom: 5%;
+  -o-margin-bottom: 5%;
 }
 
 #lyrics {
   font-size: 1.1vw;
+  -webkit-font-size: 1.1vw;
+  -moz-font-size: 1.1vw;
+  -ms-font-size: 1.1em;
+  -o-font-size: 1.1vw;
   line-height: 120%;
+  -webkit-line-height: 120%;
+  -moz-line-height: 120%;
+  -ms-line-height: 120%;
+  -o-line-height: 120%;
 }
 
 #other {
   font-size: 1.4vw;
+  -webkit-font-size: 1.4vw;
+  -moz-font-size: 1.4vw;
+  -ms-font-size: 1.4vw;
+  -o-font-size: 1.4vw;
   color: #fff;
 }
 
 #extraSongsContainer {
   display: block;
   width: 100%;
+  -webkit-width: 100%;
+  -moz-width: 100%;
+  -ms-width: 100%;
+  -o-width: 100%;
   margin-top: 10%;
+  -webkit-margin-top: 10%;
+  -moz-margin-top: 10%;
+  -ms-margin-top: 10%;
+  -o-margin-top: 10%;
 }
 
 .extraSongs {
@@ -189,10 +225,25 @@ iframe {
   text-decoration: none;
   font-weight: bold;
   font-size: 1vw;
+  -webkit-font-size: 1vw;
+  -moz-font-size: 1vw;
+  -ms-font-size: 1vw;
+  -o-font-size: 1vw;
   display: block;
   margin-top: 2%;
+  -webkit-margin-top: 2%;
+  -moz-margin-top: 2%;
+  -ms-margin-top: 2%;
+  -o-margin-top: 2%;
 }
 
 .extraSongs:hover {
   text-decoration: underline !important;
+}
+
+.highlight {
+  background-color: #ff8533;
+  font-weight: bold;
+  color: #fff;
+  padding: .3%;
 }
