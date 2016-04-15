@@ -246,4 +246,8 @@ iframe {
   font-weight: bold;
   color: #fff;
   padding: .3%;
+  -webkit-padding: .3%;
+  -moz-padding: .3%;
+  -ms-padding: .3%;
+  -o-padding: .3%;
 }
