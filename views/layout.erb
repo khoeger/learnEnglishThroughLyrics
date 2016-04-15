@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title %></title>
+    <link rel="stylesheet" href="layout.css" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="navigation">
+      <a href="/" class="navigationLink active">Learn</a>
+      <a href="/about" class="navigationLink">About</a>
+    </div>
+    <%= yield %>
+  </body>
+</html>

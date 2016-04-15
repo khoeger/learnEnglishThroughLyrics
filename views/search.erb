@@ -1,0 +1,21 @@
+<div id="formContainer">
+  <form action="/search" method="post">
+    <input id="word" type="text" name="word" placeholder="Word or Phrase">
+    <input id="search" type="submit" value="S" onclick="placeText()">
+    <div id="extraSongsContainer">
+      <h1 id="other">Other Songs Containing "<%= @word %>":</h1>
+      <a href="" class="extraSongs"><%= @songNames[1] %></a>
+      <a href="" class="extraSongs"><%= @songNames[2] %></a>
+      <a href="" class="extraSongs"><%= @songNames[3] %></a>
+      <a href="" class="extraSongs"><%= @songNames[4] %></a>
+    </div>
+  </form>
+  <p id="rightSide">
+    <iframe width="100%" src="<%= $video %>" frameborder="0" allowfullscreen></iframe>
+  </p>
+</div>
+<div id="lyricsContainer">
+  <h1 id="songTitle"><%= $sng %></h1>
+  <h2 id="songArtist"><%= $art %></h2>
+  <p id="lyrics"><%= @lyrics %></p>
+</div>

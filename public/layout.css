@@ -1,0 +1,27 @@
+body {
+  background-color: #fff;
+  margin: 0%;
+  font-family: sans-serif;
+}
+
+#navigation {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: inline-block;
+}
+
+.navigationLink {
+  color: #191919;
+  padding: .3% 2% .3% 2%;
+  margin-left: 3%;
+  text-decoration: none;
+  font-size: 1.1vw;
+}
+
+.active {
+  background-color: #00ccff;
+  color: #fff;
+  font-weight: bold;
+}

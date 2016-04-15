@@ -1,93 +1,198 @@
-body {
-  background-color: #f1f1f1;
-  margin: 0%;
-}
-
-
-#lyricsContainer {
-  width: 45%;
-  margin-left: 5%;
-  background-color: #fff;
-  margin-top: 5%;
-  border: .2vw solid #e1e1e1;
-}
-
-#lyrics {
-  color: #3f3f3f;
-  font-size: 1.5vw;
-  margin-left: 2%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  display: inline-block;
-}
-
 #formContainer {
-  margin-left: 5%;
-  width: 30%;
-  position: relative;
-  margin-top: 3%;
-  padding-right: 10%;
-  border-right: .2vw solid #e1e1e1;
+  width: 100%;
+  -webkit-width: 100%;
+  -moz-width: 100%;
+  -ms-width: 100%;
+  -o-width: 100%;
+  background-color: #ff8533;
+  display: inline-block;
+  overflow: auto;
+}
+
+form {
+  width: 40%;
+  -webkit-width: 40%;
+  -moz-width: 40%;
+  -ms-width: 40%;
+  -o-width: 40%;
+  padding-top: 5%;
+  -webkit-padding-top: 5%;
+  -moz-padding-top: 5%;
+  -ms-padding-top: 5%;
+  -o-padding-top: 5%;
+  padding-bottom: 5%;
+  -webkit-padding-bottom: 5%;
+  -moz-padding-bottom: 5%;
+  -ms-padding-bottom: 5%;
+  -o-padding-bottom: 5%;
+  margin-left: 10%;
+  -webkit-margin-left: 10%;
+  -moz-margin-left: 10%;
+  -ms-margin-left: 10%;
+  -o-margin-left: 10%;
+  overflow: auto;
   display: inline-block;
 }
 
-#title {
-  display: block;
-  width: 99%;
-  margin-bottom: 2%;
+#word {
+  width: 60%;
+  -webkit-width: 60%;
+  -moz-width: 60%;
+  -ms-width: 60%;
+  -o-width: 60%;
+  font-size: 1vw;
+  -webkit-font-size: 1vw;
+  -moz-font-size: 1vw;
+  -ms-font-size: 1em;
+  -o-font-size: 1vw;
   line-height: 2vw;
-  font-size: 1.2vw;
-}
-
-#artist {
-  display: block;
-  width: 99%;
-  line-height: 2vw;
-  font-size: 1.2vw;
+  -webkit-line-height: 2vw;
+  -moz-line-height: 2vw;
+  -ms-line-height: 2em;
+  -o-line-height: 2vw;
+  border-top-left-radius: 2vw;
+  -webkit-border-top-left-radius: 2vw;
+  -moz-border-top-left-radius: 2vw;
+  -ms-border-top-left-radius: 2em;
+  -o-border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  -webkit-border-bottom-left-radius: 2vw;
+  -moz-border-bottom-left-radius: 2vw;
+  -ms-border-bottom-left-radius: 2em;
+  -o-border-bottom-left-radius: 2vw;
+  border: 1px solid #cc5200;
+  padding-left: 3%;
+  -webkit-padding-left: 3%;
+  -moz-padding-left: 3%;
+  -ms-padding-left: 3%;
+  -o-padding-left: 3%;
+  display: inline-block;
+  float: left;
 }
 
 #search {
-  margin-top: 2%;
+  width: 7%;
+  -webkit-width: 7%;
+  -moz-width: 7%;
+  -ms-width: 7%;
+  -o-width: 7%;
+  display: inline-block;
+  float: left;
+  line-height: 2vw;
+  -webkit-line-height: 2vw;
+  -moz-line-height: 2vw;
+  -ms-line-height: 2em;
+  -o-line-height: 2vw;
+  font-size: 1vw;
+  -webkit-font-size: 1vw;
+  -moz-font-size: 1vw;
+  -ms-font-size: 1em;
+  -o-font-size: 1vw;
+  border: 1px solid #cc5200;
+  background-color: #cc5200;
+  color: #fff;
+  border-top-right-radius: 2vw;
+  -webkit-border-top-right-radius: 2vw;
+  -moz-border-top-right-radius: 2vw;
+  -ms-border-top-right-radius: 2em;
+  -o-border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  -webkit-border-bottom-right-radius: 2vw;
+  -moz-border-bottom-right-radius: 2vw;
+  -ms-border-bottom-right-radius: 2em;
+  -o-border-bottom-right-radius: 2vw;
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+#rightSide {
   float: right;
-  font-size: 1.2vw;
-}
-
-#songTitle {
-  font-size: 3vw;
-  text-align: center;
-  margin-bottom: 0%;
-}
-
-#songArtist {
-  font-size: 2vw;
-  text-align: center;
-  margin-top: 0%;
-}
-
-.button {
-  width: 6%;
-  display: none;
-}
-
-#player {
-  float: right;
-  margin-top: 3%;
-  margin-right: 5%;
   width: 40%;
-  position: relative;
-  background-color: #fff;
-  border: .2vw solid #e1e1e1;
-  padding: 1%;
-}
-
-#play {
-  display: inline-block;
-}
-
-#robostarSings {
-  display: inline-block;
+  -webkit-width: 40%;
+  -moz-width: 40%;
+  -ms-width: 40%;
+  -o-width: 40%;
+  float: right;
+  margin-right: 5%;
+  -webkit-margin-right: 5%;
+  -moz-margin-right: 5%;
+  -ms-margin-right: 5%;
+  -o-margin-right: 5%;
   font-size: 1.2vw;
-  margin-top: 1.5%;
-  margin-left: 2%;
-  position: absolute;
+  -webkit-font-size: 1.2vw;
+  -moz-font-size: 1.2vw;
+  -ms-font-size: 1.2em;
+  -o-font-size: 1.2vw;
+  color: #fff;
+  text-align: justify;
+  padding-top: 5%;
+  -webkit-padding-top: 5%;
+  -moz-padding-top: 5%;
+  -ms-padding-top: 5%;
+  -o-padding-top: 5%;
+  padding-bottom: 5%;
+  -webkit-padding-bottom: 5%;
+  -moz-padding-bottom: 5%;
+  -ms-padding-bottom: 5%;
+  -o-padding-bottom: 5%;
+  border-left: 1px dotted #cc5200;
+  margin-top: 0%;
+  -webkit-margin-top: 0%;
+  -moz-margin-top: 0%;
+  -ms-margin-top: 0%;
+  -o-margin-right: 0%;
+  margin-bottom: 0%;
+  -webkit-margin-bottom: 0%;
+  -moz-margin-bottom: 0%;
+  -ms-margin-bottom: 0%;
+  -o-margin-bottom: 0%;
+  padding-left: 4%;
+  -webkit-padding-left: 4%;
+  -moz-padding-left: 4%;
+  -ms-padding-left: 4%;
+  -o-padding-left: 4%;
+}
+
+iframe {
+  height: 20vw;
+}
+
+#lyricsContainer {
+  width: 40%;
+  margin-left: 5%;
+  background-color: #fff;
+  color: #191919;
+  margin-bottom: 5%;
+}
+
+#lyrics {
+  font-size: 1.1vw;
+  line-height: 120%;
+}
+
+#other {
+  font-size: 1.4vw;
+  color: #fff;
+}
+
+#extraSongsContainer {
+  display: block;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.extraSongs {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1vw;
+  display: block;
+  margin-top: 2%;
+}
+
+.extraSongs:hover {
+  text-decoration: underline !important;
 }
